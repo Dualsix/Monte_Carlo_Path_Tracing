@@ -1,0 +1,114 @@
+# Scene
+
+# Coordinate system:
+
+# (X, Y, Z)
+#
+#  Y
+#  |
+#  |
+#  |
+#  |
+#   ---------- X
+#   \
+#    \
+#     \
+#      Z
+
+
+## Camera
+eye              (0, 0, 40)
+lookat           (0.0, 0.0, 0.0)
+up               (0.0, 1.0, 0.0)
+vpdist           3.1
+
+
+## Background color
+bgcolor          [0.05, 0.15, 0.25]
+
+## Ambient light
+amblight         [0.2, 0.2, 0.2]
+
+## Triangle light
+triangle         (-2.5, 9.99, 0) (2.5, 9.99, 0) (0, 9.99, 2.5)
+emission         [30.0, 30.0, 30.0]
+diffuse          [1.0, 1.0, 1.0]
+
+## Triangle light
+triangle         (-2.5, 9.99, 0) (2.5, 9.99, 0) (0, 9.99, -2.5)
+emission         [30.0, 30.0, 30.0]
+diffuse          [1.0, 1.0, 1.0]
+
+## Blue plastic cube
+
+cube             (-8, -10, -6) (-2, -4, 0)
+diffuse          [0.0, 0.27, 0.72]
+specular         [0.01, 0.01, 0.01]
+Phong_exp		 20
+
+## Aluminium sphere
+
+sphere           (4.0, -6.0, -5.0) 4.0
+diffuse          [0.09, 0.09, 0.09]
+specular         [0.82, 0.83, 0.83]
+Phong_exp		 200
+
+## Red plastic sphere
+
+sphere           (7.3, -8.0, 4.0) 2.0
+diffuse          [0.7, 0.2, 0.2]
+specular         [0.02, 0.02, 0.02]
+Phong_exp		 20
+
+## Copper sphere
+
+sphere           (-5, -2, -2.5) 2.0
+diffuse          [0.29, 0.19, 0.16]
+specular         [0.67, 0.45, 0.38]
+Phong_exp		 200
+
+## Gold sphere
+
+sphere           (-6.0, -8.0, 4.0) 2.0
+diffuse          [0.3, 0.23, 0.1]
+specular         [0.7, 0.54, 0.24]
+Phong_exp		 20
+
+## Floor
+
+cube             (-10, -10.1, -10) (10, -10, 10) 
+diffuse          [0.2, 0.2, 0.19]
+specular         [0.46, 0.46, 0.45]
+Phong_exp		 50
+
+## Ceiling
+
+cube             (-10, 10, -10) (10, 10.1, 10) 
+diffuse          [0.6, 0.6, 0.6]
+emission         [0.0, 0.0, 0.0]
+specular         [0, 0, 0]
+Phong_exp		 0
+
+## Further Wall 
+
+cube             (-10.1, -10.1, -10.1) (10.1, 10.1, -10) 
+diffuse          [0.5, 0.4, 0.1]
+emission         [0.0, 0.0, 0.0]
+specular         [0, 0, 0]
+Phong_exp		 0
+
+## (Left) Red Wall cube
+
+cube             (-10.1, -10.1, -10) (-10, 10.1, 10) 
+diffuse          [0.65, 0.1, 0.1]
+emission         [0.0, 0.0, 0.0]
+specular         [0, 0, 0]
+Phong_exp		 0
+
+## (Right) Green Wall cube
+
+cube             (10., -10.1, -10) (10.1, 10.1, 10) 
+diffuse          [0.1, 0.70, 0.15]
+emission         [0.0, 0.0, 0.0]
+specular         [0, 0, 0]
+Phong_exp		 0
